@@ -1,0 +1,50 @@
+Baixar a ISO do debian:
+	https://drive.google.com/file/d/1uoRfNAAsefsKPPYD7fVH9Hqb0bC2Yjkz/view
+
+Códgos:
+	- Informativo (100-199)
+	- Sucesso (200-299)
+	- Redirecionamento (300-399)
+	- Erro de cliente (400-499)
+	- Erro do servidor (500-599)
+
+Cabeçalhos HTTP:
+	User-Agent: Identificação do navegador ou do cliente que faz a requisição
+		Podemos alterar o IP (VPN) ou o User-Agent (Plugins (Mozila, por exemplo))
+		
+	Accept: Tipo de midia que o cliente pode processar (Imagens, vídeos, áudios, xml, json...)
+
+
+
+Finger print: (Identidade digital) está sendo salva pelos provedores (Google, Mozila, Opera, Safari)
+
+
+(Utilizar VPN's que não estão assinadas com tratado de (?): cryptostorm.is (Não grava log))
+
+WebRTC: https://www.deviceinfo.me/ + https://browserleaks.com/
+
+Qual a finalidade desses diretórios no sistema operacional linux:
+	d -> diretório; 
+	l - > link; 
+	rwx (read, write e execute): rwx rwx rwx (usuários, grupos e outros). O tracinho diz que não tem permissão na letra que antecede: r-w
+	
+- su root
+- senha
+- cd / 
+- ls -lha
+
+Quando não soube rum comando, colocar ele seguido de '--help': 
+	cd --help | less 
+	ls -- help | less
+	
+Uma das finalidades da pasta home é armazenar o usuário.
+Criar um arquivo: touch teste.txt
+echo "Escreve no txt" > teste.txt
+
+existem usuários que não tem certas permissões... O ususário root tem (-su root). Por isso não tem vírus no Linux...
+
+
+(|less permite subir e descer com as setas no teclado)
+(apertar o q ou ctrl + c ajuda a sair da descrição)
+ctrl + f: tira o mouse da vm
+ctrl + l: limpa o terminal
