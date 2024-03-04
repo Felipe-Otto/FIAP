@@ -1,0 +1,46 @@
+Placa de rede no Linux:
+	Configurando cliente e servidor...
+	* Filmes: 'Cyberhell' e  'Posso te contar um segredo' 
+	
+Settings (Virtualbox) > General > 
+O Linux só precisa de 1 processador para rodar tranquilamente
+A Rede na Virtual Machine tem que estar em NAT, assim a Policia Federal não acha... Você pode fazer a merda e depois excluir a VM
+
+
+Comandos:
+	init 0: Desliga a máquina
+	ip -br -c a: mostra as placas de rede
+	last | less: mostra o scroll do ultimo comando (permitindo ir para cima e para baixo... 'q' sai dele)
+	passwd user: Altera a seha do usuário
+	hostname: informação do linux
+	uname -a: informações do kernel
+	ls
+	pwd
+	ls -a: lista os arquivos ocultos
+	ls -d: lista os arquivos não ocultos
+	ls -l sda*: tras os arquivo que começam com sda (sda1; sda2; sda3)
+	ls -l sd??: tras os arquivos que começam com sd seguido de dois caracteres, a quantidade é definida pelo ? (sda1; sda2; sda3)
+	ls -l sda[1-5]: tras os arquivos que começam com sda seguido de 1 à 5 (sda1; sda2; sda3; sda4; sda5)
+	mkdir folder: cria diretório 'folder'
+	rm -d folder: apaga o diretório 'folder'
+	rm arq.txt: apaga o arq.txt
+	touch arquivo: cria arquivo
+	nano arq.txt: escreve o bloco de notas (Ctrl + O: salva e Ctrl + X: volta)
+	cat arq.txt: mostra o conteudo do arq.txt
+	cp arq.txt /home/folder/: copia o arq.txt na folder
+	mv arq.txt /home/folder/: move o arq.txt na folder
+
+Redes:
+	Ativar a segunda interface de network no Virtualbox (Virtual box > Network > Adapter > Attached to: Internal Network)
+	nano /etc/network/interfaces: 
+		ESCREVER EMBAIXO: 
+			allow-hotplug empos8
+			Iface empos8 inet static
+			address 192.168.1.10
+
+No linux o '^' significa Ctrl
+Trabalhando com arquivos:
+	* trás todas as palavras com aquele caracter
+		
+	
+							
